@@ -1,9 +1,12 @@
 import './App.css';
+import Timer from './Timer';
 
-function App() {
+const App = () => {
+  const time = new Date()
+  time.setSeconds(time.getSeconds() + 600)
   return (
     <div className="App">
-      Hello world
+      <Timer />
     </div>
   );
 }
